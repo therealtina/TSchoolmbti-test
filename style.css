@@ -1,0 +1,27 @@
+/* styles.css */
+
+.background-container {
+    width: 100%; /* 設置容器寬度 */
+    height: 100vh; /* 設置容器高度 */
+    overflow: hidden; /* 隱藏容器內溢出部分 */
+}
+
+.question-page, .result-page {
+    width: 100%;
+    height: 100%;
+    background-size: cover; /* 使背景圖片填滿容器 */
+    background-position: center; /* 居中顯示背景圖片 */
+}
+
+/* 在較小的屏幕上，調整背景圖片大小 */
+@media (max-width: 768px) {
+    .question-page, .result-page {
+        background-size: contain; /* 在小屏幕上使用contain保持圖片比例 */
+    }
+}
+
+/* 調整結果圖片大小 */
+.result-image {
+    max-width: 100%; /* 最大寬度100%以避免圖片超出容器 */
+    height: auto; /* 根據寬度自動調整高度 */
+}
